@@ -1,0 +1,6 @@
+# https://dalmaestetica.pt/ robots.txt
+User-agent: *
+Allow: /
+
+# Direct search bots to our XML sitemap for deep crawling
+Sitemap: https://dalmaestetica.pt/sitemap.xml

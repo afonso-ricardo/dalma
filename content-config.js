@@ -174,6 +174,23 @@ const heroContent = {
     backgroundImage: 'images/hero-banner.png',
     backgroundAlt: 'D\'Alma Spa Ambiente Tranquilo'
 };
+// ============= TESTIMONIALS ============
+// Deixe esta lista vazia [] para manter a secção oculta até ter testemunhos reais.
+// Para ativar, basta descomentar e preencher as informações abaixo!
+const testimonials = [
+    /*
+    {
+        name: 'Maria Silva',
+        text: 'A massagem ayurvédica mudou completamente o meu bem-estar. Sinto-me muito mais leve, equilibrada e sem dores nas costas. O espaço D\'Alma é maravilhoso!',
+        stars: 5
+    },
+    {
+        name: 'João Santos',
+        text: 'Excelente profissional e um ambiente extremamente relaxante em Alverca. O Ritual Equilíbrio é perfeito para aliviar o stress acumulado do trabalho.',
+        stars: 5
+    }
+    */
+];
 
 // ============= SECTIONS TITLES ============
 const sectionTitles = {
@@ -190,6 +207,7 @@ if (typeof module !== 'undefined' && module.exports) {
         spaceImages,
         galleryImages,
         heroContent,
-        sectionTitles
+        sectionTitles,
+        testimonials // Adicionado aqui
     };
 }

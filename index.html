@@ -12,18 +12,11 @@
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dalma-massagem.pt/">
+    <meta property="og:url" content="https://dalmaestetica.pt/">
     <meta property="og:title" content="D'Alma - Massagem Profissional em Alverca">
     <meta property="og:description" content="Massagem terapêutica profissional para relaxamento e bem-estar. Especialistas em massagem sueca, tecido profundo, pedras quentes e aromaterapia.">
-    <meta property="og:image" content="https://dalma-massagem.pt/images/og-image.jpg">
+    <meta property="og:image" content="https://dalmaestetica.pt/images/og-image.jpg">
     <meta property="og:locale" content="pt_PT">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://dalma-massagem.pt/">
-    <meta property="twitter:title" content="D'Alma - Massagem Profissional em Alverca">
-    <meta property="twitter:description" content="Massagem terapêutica profissional para relaxamento e bem-estar. Agende a sua sessão hoje.">
-    <meta property="twitter:image" content="https://dalma-massagem.pt/images/og-image.jpg">
     
     <!-- Local Business SEO -->
     <script type="application/ld+json">
@@ -32,7 +25,7 @@
       "@type": "LocalBusiness",
       "name": "D'Alma Massagem Terapêutica",
       "description": "Massagem terapêutica profissional em Alverca, Lisboa. Especialistas em massagem sueca, tecido profundo, pedras quentes e aromaterapia.",
-      "url": "https://dalma-massagem.pt/",
+      "url": "https://dalmaestetica.pt/",
       "telephone": "+351 938 251 868",
       "address": {
         "@type": "PostalAddress",
@@ -55,14 +48,14 @@
       "paymentAccepted": "Cash, Credit Card, MB Way",
       "currenciesAccepted": "EUR",
       "sameAs": [
-        "https://www.instagram.com/dalma.massagem",
-        "https://www.facebook.com/dalma.massagem"
+        "https://www.instagram.com/dalma.esteticaholistica/",
+        "https://www.facebook.com/dalma.esteticaholistica/"
       ],
       "serviceType": [
-        "Massagem Sueca",
-        "Massagem Tecido Profundo",
-        "Massagem Pedras Quentes",
-        "Massagem Aromaterapia"
+        "Massagem Modeladora",
+        "Massagem Ayurvédica",
+        "Constelação Familiar Individual",
+        "Ritual Equilíbrio"
       ]
     }
     </script>
@@ -91,7 +84,7 @@
                 <li><a href="#our-space">O Nosso Espaço</a></li>
                 <li><a href="#gallery">Galeria</a></li>
                 <li><a href="#contact">Contatos</a></li>
-                <li class="nav-phone"><a href="tel:555-123-4567"><i class="fas fa-phone"></i> +351 938 251 868</a></li>
+                <li class="nav-phone"><a href="tel:+351938251868"><i class="fas fa-phone"></i> +351 938 251 868</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -183,13 +176,12 @@
         <div class="container">
             <h2>Nosso Trabalho</h2>
             <div class="gallery-grid">
-                <!-- Gallery images will be dynamically loaded here -->
-            </div>
+                </div>
         </div>
     </section>
 
-    
-    <!-- Contact Section -->
+    <section id="testimonials" class="testimonials" style="display: none;"></section>
+
     <section id="contact" class="contact">
         <div class="container">
             <h2>Entre em Contato</h2>
@@ -217,6 +209,16 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="contact-map">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=Rua%20Ant%C3%B3nio%20S%C3%A9rgio%20145,%20Alverca,%20Portugal&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
                 <div class="contact-form" style="display: none;">
                     <h3>Envie uma mensagem</h3>
                     <form id="contact-form">
@@ -268,16 +270,23 @@
                     <a href="https://www.facebook.com/dalma.esteticaholistica/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
                 </div>
             </div>
+            <div class="legal-links" style="display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center;">
+                <a href="https://www.livroreclamacoes.pt" target="_blank" rel="noopener noreferrer" class="livro-reclamacoes-link">
+                    <i class="fas fa-book"></i> Livro de Reclamações Eletrónico
+                </a>
+                <a href="politica-de-privacidade.html" class="livro-reclamacoes-link">
+                    <i class="fas fa-shield-alt"></i> Política de Privacidade
+                </a>
+            </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 D'Alma. All rights reserved.</p>
             </div>
         </div>
     </footer>
-
     <!-- Cookie Consent Banner -->
     <div id="cookie-banner" class="cookie-banner">
         <div class="cookie-content">
-            <p>Usamos cookies para melhorar a sua experiência no nosso site. Ao continuar, concorda com a nossa utilização de cookies.</p>
+            <p>Usamos cookies para melhorar a sua experiência no nosso site. Ao continuar, concorda com a nossa utilização de cookies e com a nossa <a href="politica-de-privacidade.html" target="_blank" style="color: #d4a574; text-decoration: underline;">Política de Privacidade</a>.</p>
             <div class="cookie-buttons">
                 <button onclick="acceptCookies()" class="cookie-btn accept">Aceitar</button>
                 <button onclick="declineCookies()" class="cookie-btn decline">Recusar</button>
@@ -285,7 +294,6 @@
         </div>
     </div>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="script.js"></script>
     <script src="content-config.js"></script>
     <script src="content-loader.js"></script>
