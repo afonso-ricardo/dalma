@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     loadServicesContent();
     loadSpaceContent();
     loadGalleryContent();
+    loadTestimonialsContent(); // Adicionado aqui
     loadHeroContent();
     loadSectionTitles();
 });
@@ -237,11 +238,6 @@ function updateModalFunction() {
         };
     }
 }
-
-// Initialize service data and update modal function
-updateServiceData();
-updateModalFunction();
-
 // Lightbox functionality
 function initLightbox() {
     const lightbox = document.getElementById('lightbox');
@@ -296,3 +292,54 @@ function closeLightbox() {
 
 // Initialize lightbox when DOM is loaded
 document.addEventListener('DOMContentLoaded', initLightbox);
+
+function loadTestimonialsContent() {
+    const testimonialsSection = document.getElementById('testimonials');
+    
+    // Verificação defensiva inteligente: se não existir o container, ou se a lista 
+    // de testemunhos não estiver definida ou estiver vazia, oculta a secção completamente.
+    if (!testimonialsSection || typeof testimonials === 'undefined' || testimonials.length === 0) {
+        if (testimonialsSection) {
+            testimonialsSection.style.display = 'none';
+        }
+        return;
+    }
+
+    // Caso existam testemunhos, exibe a secção e renderiza a estrutura dinamicamente
+    testimonialsSection.style.display = 'block';
+    testimonialsSection.innerHTML = `
+        <div class="container">
+            <h2>O que Dizem os Nossos Clientes</h2>
+            <div class="testimonials-grid"></div>
+        </div>
+    `;
+
+    const grid = testimonialsSection.querySelector('.testimonials-grid');
+    
+    testimonials.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'testimonial-card';
+        
+        // Gera as estrelas douradas com base no número configurado
+        let starsHtml = '';
+        for (let i = 0; i < item.stars; i++) {
+            starsHtml += '<i class="fas fa-star"></i>';
+        }
+
+        card.innerHTML = `
+            <div class="testimonial-stars">${starsHtml}</div>
+            <p class="testimonial-text">"${item.text}"</p>
+            <h4 class="testimonial-name">${item.name}</h4>
+        `;
+        
+        grid.appendChild(card);
+    });
+}
+
+// Initialize service data and update modal function
+updateServiceData();
+updateModalFunction();
+
+// Load testimonials content
+loadTestimonialsContent();
+
